@@ -1,38 +1,3 @@
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #111;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-}
-
-.content {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-}
-
-h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
-.emoji {
-    font-size: 2em;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -47,43 +12,6 @@ p {
     --surface-color-hover: rgba(255, 255, 255, 0.02);
     --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(./assets/moon-stars.svg);
-}
-
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.container {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Ocupa toda a altura da tela */
-}
-
-img {
-    max-width: 100%; /* Para que a imagem não exceda a largura da tela */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Alinha itens em coluna */
-    justify-content: center; /* Centraliza verticalmente */
-}
-
-.container {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    flex: 1; /* Faz com que o contêiner ocupe o espaço restante */
-}
-
-footer {
-    text-align: center; /* Centraliza o texto do footer */
-    padding: 10px; /* Adiciona um pouco de espaçamento */
 }
 
 .light {
@@ -144,11 +72,6 @@ body * {
     left: 0;
     z-index: 1;
     transform: translateY(-11%);
-}
-
-#switch {
-    margin-bottom: 20px; /* Adiciona espaço abaixo do botão */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
 .light #switch button {
@@ -231,27 +154,36 @@ footer {
     }
 }
 
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
-    flex-direction: column; /* Alinha itens em coluna */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Usa a altura mínima em vez de 100vh para evitar corte */
+    min-height: 100vh;
     background-color: #111;
     color: white;
     font-family: 'Arial', sans-serif;
     text-align: center;
     padding: 20px;
-    margin: 0;
 }
 
 .content {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    padding: 40px;
+    padding: 60px 40px 40px; /* Adiciona espaço acima do conteúdo */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    flex: 1; /* Permite que o conteúdo cresça para preencher espaço */
-    margin-bottom: 20px; /* Espaço abaixo do conteúdo */
+    flex: 1;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -269,17 +201,35 @@ p {
 }
 
 #switch {
-    margin-top: 20px; /* Espaço acima do botão */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 footer {
-    text-align: center; /* Centraliza o texto do footer */
-    padding: 10px; /* Adiciona um pouco de espaçamento */
+    text-align: center;
+    padding: 10px;
 }
 
-/* Resto do código CSS permanece o mesmo... */
+ul {
+    list-style: none;
+    padding: 24px 0;
+}
 
+ul li a {
+    display: inline-block;
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Media Queries */
 @media (orientation: landscape) {
     body {
         justify-content: flex-start; /* Evita que o conteúdo fique colado no footer */
