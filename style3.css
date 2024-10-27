@@ -230,3 +230,58 @@ footer {
         --bg-url: url(./assets/bg-desktop-light.jpg);
     }
 }
+
+body {
+    display: flex;
+    flex-direction: column; /* Alinha itens em coluna */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Usa a altura mínima em vez de 100vh para evitar corte */
+    background-color: #111;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    flex: 1; /* Permite que o conteúdo cresça para preencher espaço */
+    margin-bottom: 20px; /* Espaço abaixo do conteúdo */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.emoji {
+    font-size: 2em;
+}
+
+#switch {
+    margin-top: 20px; /* Espaço acima do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+footer {
+    text-align: center; /* Centraliza o texto do footer */
+    padding: 10px; /* Adiciona um pouco de espaçamento */
+}
+
+/* Resto do código CSS permanece o mesmo... */
+
+@media (orientation: landscape) {
+    body {
+        justify-content: flex-start; /* Evita que o conteúdo fique colado no footer */
+    }
+}
