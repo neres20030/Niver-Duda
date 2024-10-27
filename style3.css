@@ -146,6 +146,11 @@ body * {
     transform: translateY(-11%);
 }
 
+#switch {
+    margin-bottom: 20px; /* Adiciona espaço abaixo do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
 .light #switch button {
     right: 0;
     left: initial;
