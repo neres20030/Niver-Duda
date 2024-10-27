@@ -153,3 +153,18 @@
             --bg-url: url(./assets/bg-desktop-light.jpg);
         }
     }
+
+    .brilho {
+        text-shadow: 0 0 5px #c4c4c4, 0 0 10px #b9b9b9, 0 0 15px #b4b4b2;
+        animation: brilho 1.5s infinite alternate;
+    }
+    
+    @keyframes brilho {
+        0% {
+            text-shadow: 0 0 5px #c4c4c4, 0 0 10px #b9b9b9, 0 0 15px #b4b4b2;
+        }
+        100% {
+            text-shadow: 0 0 20px #c4c4c4, 0 0 30px #b9b9b9, 0 0 40px #b4b4b2
+        }
+    }
+    
